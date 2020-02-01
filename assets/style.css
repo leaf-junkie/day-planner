@@ -1,0 +1,75 @@
+.container {
+    margin-top: 6vh;
+    background-color: #fefefe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+main {
+    background-color: #fff;
+}
+
+.card,
+#bgImg {
+    border-radius: 5px;
+}
+
+#bgImg {
+    height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-img-overlay {
+    height: 200px;
+}
+
+#dateWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul li {
+    width: 10%;
+}
+
+ul input {
+    width: 80%;
+}
+
+ul button {
+    width: 10%;
+}
+
+.saveBtn {
+    background-image: linear-gradient(to right, #fcb69f 0%, #ffecd2 100%);
+    border: 1px solid #fff;
+}
+
+.saveBtn:hover { 
+    background-image: linear-gradient(to right, #fdd2c4 0%, #fcf5ec 100%);
+    color: #333;
+}
+
+.timePast {
+    background-color: #dadddb;
+}
+
+.timePresent {
+    background-color: #f0c7c8;
+}
+
+.timeFuture {
+    background-color: #c7f0db;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    margin: 0 auto;
+}
