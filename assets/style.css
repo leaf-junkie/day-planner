@@ -1,3 +1,7 @@
+body {
+    color: #333;
+}
+
 .container {
     margin-top: 6vh;
     background-color: #fefefe;
@@ -27,6 +31,12 @@ main {
     height: 200px;
 }
 
+#quote {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
 #dateWrapper {
     display: flex;
     flex-direction: row;
@@ -45,15 +55,32 @@ ul button {
     width: 10%;
 }
 
+#refreshBtn,
 .saveBtn {
-    background-image: linear-gradient(to right, #fcb69f 0%, #ffecd2 100%);
+    background-image: linear-gradient(to right, #18105B  0%, #7E63A0 100%);
+    border: 1px solid #fff;
+}
+
+#refreshBtn:hover,
+.saveBtn:hover { 
+    background-image: linear-gradient(to right, #534CAA  0%, #A779AC 100%);
+    border: 1px solid #fff;
+}
+
+#refreshBtn {
+    margin-left: 90%;
+}
+
+/* .saveBtn {
+    background-image: linear-gradient(to right, #ffaeae  0%, #ffe3c7 100%);
     border: 1px solid #fff;
 }
 
 .saveBtn:hover { 
-    background-image: linear-gradient(to right, #fdd2c4 0%, #fcf5ec 100%);
+    background-image: linear-gradient(to right, #ffc7c7  0%, #ffe3c7 100%);
     color: #333;
-}
+    border: 1px solid #fff;
+} */
 
 .timePast {
     background-color: #dadddb;
@@ -68,8 +95,8 @@ ul button {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 50%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24%;
 }

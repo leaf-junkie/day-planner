@@ -21,75 +21,76 @@
     
         <main>
             <div class="card mb-3">
-                <img src="./assets/images/hazyFlowers.jpg" class="card-img-top" id="bgImg" alt="Dreamy, hazy field of small, pink flowers">
+                <img src="./assets/images/galaxy.jpg" class="card-img-top" id="bgImg" alt="Dreamy, hazy field of small, pink flowers">
                 <div class="card-img-overlay text-white">
                     <div id="dateWrapper">
                         <h2 class="card-title" id="currentDate"></h2>
                         <h2 id="currentTime"></h2>
                     </div>
-                    <h3 class="card-text" id="quote">Success doesn’t just find you. You have to go out and get it.</h3>
+                    <button class="btn text-white" id="refreshBtn">Refresh</button>
+                    <h4 class="card-text font-italic" id="quote">Success doesn’t just find you. You have to go out and get it.</h4>
                 </div>
                 
                 <div class="card-body">
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">9am</li>
-                    <input class="list-group-item note" id="input1"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn1">Save</button>
+                    <li class="list-group-item timeSlot" data-time="9">9:00</li>
+                    <input class="list-group-item note" data-input="input1" data-time="9"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn1">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">10am</li>
-                    <input class="list-group-item note" id="input2"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn2">Save</button>
+                    <li class="list-group-item timeSlot" data-time="10">10:00</li>
+                    <input class="list-group-item note" data-input="input2" data-time="10"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn2">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">11am</li>
-                    <input class="list-group-item note" id="input3"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn3">Save</button>
+                    <li class="list-group-item timeSlot" data-time="11">11:00</li>
+                    <input class="list-group-item note" data-input="input3" data-time="11"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn3">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">12pm</li>
-                    <input class="list-group-item note" id="input4"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn4">Save</button>
+                    <li class="list-group-item timeSlot" data-time="12">12:00</li>
+                    <input class="list-group-item note" data-input="input4" data-time="12"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn4">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">1pm</li>
-                    <input class="list-group-item note" id="input5"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn5">Save</button>
+                    <li class="list-group-item timeSlot" data-time="13">13:00</li>
+                    <input class="list-group-item note" data-input="input5" data-time="13"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn5">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">2pm</li>
-                    <input class="list-group-item note" id="input6"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn6">Save</button>
+                    <li class="list-group-item timeSlot" data-time="14">14:00</li>
+                    <input class="list-group-item note" data-input="input6" data-time="14"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn6">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">3pm</li>
-                    <input class="list-group-item note" id="input7"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn7">Save</button>
+                    <li class="list-group-item timeSlot" data-time="15">15:00</li>
+                    <input class="list-group-item note" data-input="input7" data-time="15"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn7">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">4pm</li>
-                    <input class="list-group-item note" id="input8"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn8">Save</button>
+                    <li class="list-group-item timeSlot" data-time="16">16:00</li>
+                    <input class="list-group-item note" data-input="input8" data-time="16"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn8">Save</button>
                   </ul>
 
                   <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item timeSlot">5pm</li>
-                    <input class="list-group-item note" id="input9"></input>
-                    <button type="button" class="btn btn-info saveBtn" id="btn9">Save</button>
+                    <li class="list-group-item timeSlot" data-time="17">17:00</li>
+                    <input class="list-group-item note" data-input="input9" data-time="17"></input>
+                    <button type="button" class="btn btn-info saveBtn" data-button="btn9">Save</button>
                   </ul>
                   <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                 </div>
             </div>
         </main>
     
-        <footer>
+        <footer class="bg-light">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <p>&copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Julie Ragsdale</p>
             </nav>
